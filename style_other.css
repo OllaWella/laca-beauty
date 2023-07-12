@@ -1,0 +1,168 @@
+body, html {
+  margin: 0;
+  height: 100%;
+  color: #454B41;
+}
+
+.header {
+  background-color: inherit;
+}
+
+.team {
+  margin-bottom: 80px;
+}
+.team__title {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 50px auto 40px;
+  font-family: "Bitter";
+  font-size: 35px;
+}
+.team__flex {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.team__flex__item {
+  margin-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+.team__flex__item img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team__name {
+  display: block;
+  font-family: "Bitter";
+  font-size: 25px;
+  letter-spacing: 1.4px;
+}
+.team__post {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.footer {
+  color: #FFFFFF;
+}
+
+.gallery__flex {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+.gallery__item {
+  margin-bottom: 30px;
+}
+.gallery__item img {
+  height: 250px;
+}
+
+.price__main-flex img {
+  max-width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.price__main-flex {
+  margin-bottom: 30px;
+  justify-content: space-around;
+}
+.price__list {
+  width: 50%;
+  font-size: 20px;
+  margin-right: 30px;
+}
+.price__flex-item {
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.contacts__flex {
+  width: 35%;
+  flex-direction: column;
+}
+.contacts__flex-span {
+  margin-bottom: 20px;
+  font-family: "Bitter";
+  font-size: 20px;
+  font-weight: 600;
+}
+.contacts__flex address {
+  font-style: normal;
+}
+.contacts__flex a {
+  display: block;
+}
+.contacts__flex p, .contacts__flex a {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+.contacts__flex p {
+  background-image: url(img/footer_map.png);
+}
+.contacts__flex a {
+  background-image: url(img/footer_mail.png);
+}
+.contacts__flex a.contacts__inst {
+  padding-left: 0;
+  background-image: none;
+}
+.contacts__flex a:nth-child(2) {
+  background-image: url(img/footer_phone.png);
+}
+
+.contacts__inst svg {
+  margin-right: 5px;
+  fill: lightgray;
+}
+
+.contacts__form {
+  width: 60%;
+}
+
+#message {
+  width: 97.9%;
+  margin-top: -1px;
+  resize: none;
+}
+
+#contacts_btn {
+  display: block;
+  margin: 40px 0 0 0;
+  font-weight: 400;
+}
+
+#email {
+  margin-left: -5px;
+}
+
+#message,
+#name,
+#email {
+  padding: 10px;
+  font-size: 15px;
+}
+#message::-moz-placeholder, #name::-moz-placeholder, #email::-moz-placeholder {
+  font-family: "Bitter";
+}
+#message::placeholder,
+#name::placeholder,
+#email::placeholder {
+  font-family: "Bitter";
+}
+
+#name,
+#email {
+  width: 49%;
+  height: 50px;
+}/*# sourceMappingURL=style_other.css.map */
