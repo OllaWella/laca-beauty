@@ -101,6 +101,13 @@ body, html {
     }
     & a {
         display: block;
+        transition: color .2s ease;
+        &:hover {
+            color: #d46846;
+        }
+        &:active {
+            color: #a94324;
+        }
     }
     & p, a {
         width: fit-content;
@@ -167,3 +174,18 @@ body, html {
     width: 49%;
     height: 50px;
 }
+
+.services {
+    &__item {
+        padding: 15px;
+        border: 1px solid black;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+        &__title {
+            margin-bottom: 10px;
+            font-style: oblique;
+        }
+    }
+}
+

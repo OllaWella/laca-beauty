@@ -68,6 +68,13 @@ body {
     border: none;
     background-color: #BF624C;
     color: $white-color;
+    transition: background-color .2s ease;
+    &:hover {
+        background-color: rgb(185, 71, 71);
+    }
+    &:active {
+        outline: 1px solid rgb(158, 151, 151);
+    }
 }
 
 .section-offset {
@@ -130,6 +137,15 @@ body {
     &__item {
         margin-right: 40px;
         text-transform: uppercase;
+        & a {
+            transition: color .2s ease;
+        }
+        & a:hover {
+            color: #bf7869;
+        }
+        & a:active {
+            color: #963926;
+        }
     }
 }
 
@@ -163,6 +179,11 @@ body {
         font-weight: 600;
         font-size: smaller;
         border-bottom: 1px solid;
+        transition: border-color .2s ease, color .2s ease;
+        &:hover {
+            color: #BF624C;
+            border-color: #BF624C;
+        }
     }
 
     &__bottom {
@@ -320,6 +341,15 @@ body {
         &__item {
             width: 200px;
             margin-bottom: 10px;
+            & a {
+                transition: color .2s ease;
+                &:hover {
+                    color: #BF624C;
+                }
+                &:active {
+                    color: #963926;
+                }
+            }
         }
     }
     &__contacts {
@@ -328,6 +358,13 @@ body {
         }
         & a {
             display: block;
+            transition: color .2s ease;
+                &:hover {
+                    color: #BF624C;
+                }
+                &:active {
+                    color: #963926;
+                }
         }
         & p, a {
             margin-bottom: 10px;

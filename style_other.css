@@ -97,6 +97,13 @@ body, html {
 }
 .contacts__flex a {
   display: block;
+  transition: color 0.2s ease;
+}
+.contacts__flex a:hover {
+  color: #d46846;
+}
+.contacts__flex a:active {
+  color: #a94324;
 }
 .contacts__flex p, .contacts__flex a {
   width: -moz-fit-content;
@@ -165,4 +172,16 @@ body, html {
 #email {
   width: 49%;
   height: 50px;
+}
+
+.services__item {
+  padding: 15px;
+  border: 1px solid black;
+}
+.services__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.services__item__title {
+  margin-bottom: 10px;
+  font-style: oblique;
 }/*# sourceMappingURL=style_other.css.map */

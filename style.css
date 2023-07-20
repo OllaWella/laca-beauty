@@ -57,6 +57,13 @@ body {
   border: none;
   background-color: #BF624C;
   color: #FFFFFF;
+  transition: background-color 0.2s ease;
+}
+.btn:hover {
+  background-color: rgb(185, 71, 71);
+}
+.btn:active {
+  outline: 1px solid rgb(158, 151, 151);
 }
 
 .section-offset {
@@ -114,6 +121,15 @@ body {
   margin-right: 40px;
   text-transform: uppercase;
 }
+.nav__item a {
+  transition: color 0.2s ease;
+}
+.nav__item a:hover {
+  color: #bf7869;
+}
+.nav__item a:active {
+  color: #963926;
+}
 
 .main-service {
   color: #454B41;
@@ -146,6 +162,11 @@ body {
   font-weight: 600;
   font-size: smaller;
   border-bottom: 1px solid;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.main-service__more:hover {
+  color: #BF624C;
+  border-color: #BF624C;
 }
 .main-service__bottom {
   margin-top: 80px;
@@ -292,11 +313,27 @@ body {
   width: 200px;
   margin-bottom: 10px;
 }
+.footer__center__item a {
+  transition: color 0.2s ease;
+}
+.footer__center__item a:hover {
+  color: #BF624C;
+}
+.footer__center__item a:active {
+  color: #963926;
+}
 .footer__contacts address {
   font-style: normal;
 }
 .footer__contacts a {
   display: block;
+  transition: color 0.2s ease;
+}
+.footer__contacts a:hover {
+  color: #BF624C;
+}
+.footer__contacts a:active {
+  color: #963926;
 }
 .footer__contacts p, .footer__contacts a {
   margin-bottom: 10px;
