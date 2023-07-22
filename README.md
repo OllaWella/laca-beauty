@@ -1,2 +1,0 @@
-# laca-beauty
-salon website
