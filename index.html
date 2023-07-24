@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <title>Laca beauty</title>
 </head>
 <body>
@@ -26,7 +29,7 @@
                         <a href="#section-team">our team</a>
                     </li>
                     <li class="nav__item">
-                        <a href="gallery.html">gallery</a>
+                        <a href="#section-gallery">gallery</a>
                     </li>
                     <li class="nav__item">
                         <a href="price.html">price</a>
@@ -125,6 +128,45 @@
                 </ul>
             </div>
         </section>
+        <section id="section-gallery" class="section-gallery">
+            <div class="container gallery">
+                <h2 class="team__title">PORTFOLIO</h2>
+                <div class="swiper mySwiper">
+                    <ul class="swiper-wrapper gallery__flex flex">
+                        <li class="gallery__item swiper-slide" >
+                            <img src="img/gallery-1.PNG" alt="nail">
+                        </li>
+                        <li class="gallery__item swiper-slide" >
+                            <img src="img/gallery-1.PNG" alt="nail">
+                        </li>
+                        <li class="gallery__item swiper-slide" >
+                            <img src="img/gallery-1.PNG" alt="nail">
+                        </li>
+                        <li class="gallery__item swiper-slide" >
+                            <img src="img/gallery-1.PNG" alt="nail">
+                        </li>
+                        <li class="gallery__item swiper-slide" >
+                            <img src="img/gallery-1.PNG" alt="nail">
+                        </li>
+                        <li class="gallery__item swiper-slide" >
+                            <img src="img/gallery-1.PNG" alt="nail">
+                        </li>
+                        <li class="gallery__item swiper-slide" >
+                            <img src="img/gallery-1.PNG" alt="nail">
+                        </li>
+                        <li class="gallery__item swiper-slide" >
+                            <img src="img/gallery-1.PNG" alt="nail">
+                        </li>
+                        <li class="gallery__item swiper-slide" >
+                            <img src="img/gallery-1.PNG" alt="nail">
+                        </li>
+                    </ul>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
         <section class="reviews section-offset">
             <div class="container reviews__flex flex">
                 <div class="reviews__left">
@@ -200,7 +242,7 @@
                         <a href="#section-team">Our Team</a>
                     </li>
                     <li class="footer__center__item">
-                        <a href="gallery.html">Gallery</a>
+                        <a href="#section-gallery">Gallery</a>
                     </li>
                     <li class="footer__center__item">
                         <a href="price.html">Price</a>
@@ -226,8 +268,7 @@
             </div>
         </div>
     </footer>
-
-    
-    <script src="script.js"></script>
+    <script src="script.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 </html>

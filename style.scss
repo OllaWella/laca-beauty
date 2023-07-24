@@ -142,10 +142,10 @@ body {
 .tabheader__item {
     cursor: pointer;
     display: flex;
-    margin-right: 10px;
-    width: 10px;
-    height: 10px;
-    background-color: #963926;
+    margin-right: 22px;
+    width: 14px;
+    height: 14px;
+    background-color: #BF624C;
     border-radius: 100%;
     transition: background-color .3s ease;
     &:hover {
@@ -154,7 +154,7 @@ body {
 }
 .tabheader__items {
     position: absolute;
-    right: 20%;
+    right: 13%;
     bottom: 93px;
 }
 
@@ -453,17 +453,20 @@ body {
   .footer {
     color: #FFFFFF;
   }
-  
-  .gallery__flex {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 80px;
+  .gallery {
+    .team__title {
+        color: $text-color;
+    }
   }
+
   .gallery__item {
     margin-bottom: 30px;
   }
   .gallery__item img {
     height: 250px;
+  }
+  .price {
+    color: $text-color;
   }
   
   .price__main-flex img {
@@ -579,6 +582,9 @@ body {
     width: 49%;
     height: 50px;
   }
+  .services {
+    color: $text-color;
+  }
   
   .services__item {
     padding: 15px;
@@ -591,7 +597,37 @@ body {
     margin-bottom: 10px;
     font-style: oblique;
   }
-  
+// swiper
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .gallery .swiper-button-next:after, .gallery .swiper-button-prev:after {
+      padding: 5px 11px;
+    font-size: 22px;
+    background-color: #BF624C;
+    color: white;
+    border-radius: 100%;
+  }
+  .gallery .swiper-pagination-bullet {
+    background-color: #BF624C;
+  }
   .nav-burger span {
     background-color: black;
   }/*# sourceMappingURL=style_other.css.map */
@@ -805,7 +841,7 @@ body {
         padding: 20px;
     }
     .tabheader__items {
-        right: 40%;
+        right: 34%;
     }
     .team {
         &__title {
@@ -860,6 +896,16 @@ body {
     .team__flex__item img {
         width: 180px;
         height: 180px;
+    }
+    .price__list ~ img,
+    .price__pedi img,
+    .price__hair img {
+        display: none;
+    }
+    .price__list,
+    .price__pedi,
+    .price__hair {
+        width: 100%;
     }
 }
 @media (max-width: 550px) {
@@ -925,5 +971,10 @@ body {
     .team__title {
         margin: 15px auto 19px;
         font-size: 23px;
+    }
+    .price__list,
+    .price__pedi,
+    .price__hair {
+        font-size: smaller;
     }
 }
